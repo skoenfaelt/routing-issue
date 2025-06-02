@@ -1,0 +1,12 @@
+﻿@use '../variables' as vars;
+
+.elevation-10 {
+  box-shadow: vars.$box-shadow !important;
+}
+
+.primary-shadow {
+  box-shadow: rgba(var(--v-theme-primary), 0.3) 0px 12px 14px 0px;
+  &:hover {
+    box-shadow: none;
+  }
+}

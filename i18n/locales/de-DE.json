@@ -1,0 +1,13 @@
+﻿{
+  "project": {
+    "title": "Q-Schema-Builder",
+    "version": "2025.4.0"
+  },
+  "introduction": {
+    "title": "Willkommen im @:project.title",
+    "description": "Mit dem @:project.title wird ein API-Schema erstellt, welches zur Generierung von Frontend und Backend Code genutzt werden kann.",
+    "step1": "Definieren Sie zuerst auf der linken Seite eine Domain.",
+    "step2": "Geben Sie nun im mittleren Bereich die API Definition der Domain an.",
+    "step3": "Sie können nun das Schema exportieren und Frontend + Backend Code generieren lassen."
+  }
+}

@@ -1,0 +1,6 @@
+﻿@use '../variables' as vars;
+
+.customize-table {
+  border-radius: vars.$border-radius-root;
+  white-space: nowrap;
+}

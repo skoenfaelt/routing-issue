@@ -1,0 +1,32 @@
+﻿@use '../variables' as vars;
+
+// Outline Card
+.v-card--variant-outlined {
+  border-color: rgba(var(--v-theme-borderLight), 0.36);
+  .v-divider {
+    border-color: rgba(var(--v-theme-borderLight), 0.36);
+  }
+}
+
+.v-card-text {
+  padding: vars.$card-text-spacer;
+}
+
+.v-card-actions {
+  padding: 0.625rem vars.$card-text-spacer vars.$card-text-spacer;
+}
+
+.v-card {
+  width: 100%;
+  overflow: visible;
+}
+
+.v-card-item {
+  padding: vars.$card-item-spacer-xy;
+}
+
+.card-hover-border {
+  &:hover {
+    border: 1px solid rgb(var(--v-theme-primary));
+  }
+}

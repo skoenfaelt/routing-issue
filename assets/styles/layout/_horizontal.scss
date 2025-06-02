@@ -1,0 +1,94 @@
+﻿@use '../variables' as vars;
+
+.mobile-menu {
+  .v-navigation-drawer {
+    height: 100vh !important;
+    z-index: 2000 !important;
+    box-shadow: 1px 2px 80px rgb(0 0 0 / 50%) !important;
+  }
+}
+@media (min-width: 960px) {
+  .horizontalMenu {
+    border-top: 1px solid rgb(135 135 135 / 15%);
+    &.maxWidth {
+      .horizontal-navbar {
+        max-width: 1250px;
+      }
+    }
+  }
+  .horizontal-navbar {
+    padding: 10px 15px;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    z-index: 11;
+    position: relative;
+    ul {
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      list-style: none;
+
+      a {
+        align-items: center;
+        color: inherit;
+        opacity: 0.7;
+        text-decoration: none;
+        display: flex;
+        padding: 10px 13px;
+        height: 44px;
+        &:hover {
+          opacity: 1;
+          color: rgb(var(--v-theme-secondary));
+        }
+      }
+    }
+    .navItem {
+      margin-right: 15px;
+      position: relative;
+    }
+    .ddMenu {
+      position: absolute;
+      width: 230px;
+      display: none;
+      top: 42px;
+      padding: 10px;
+      background-color: rgb(var(--v-theme-surface));
+      box-shadow: vars.$box-shadow;
+      border-radius: vars.$border-radius-root;
+      li {
+        margin-bottom: 3px;
+      }
+    }
+    .ddLevel-2,
+    .ddLevel-3 {
+      top: -5px;
+      left: 212px;
+    }
+    .navItem:hover {
+      background-color: rgb(var(--v-theme-lightsecondary));
+      border-radius: vars.$border-radius-root;
+      > a > .ddIcon {
+        transform: rotate(90deg);
+      }
+      > .ddMenu {
+        display: block;
+      }
+    }
+    > li:hover {
+      background-color: rgb(var(--v-theme-lightsecondary));
+      border-radius: vars.$border-radius-root;
+      > .navItemLink {
+        color: rgb(var(--v-theme-secondary));
+        opacity: 1;
+      }
+    }
+    .router-link-exact-active {
+      color: rgb(var(--v-theme-secondary));
+      font-weight: 500;
+      background-color: rgb(var(--v-theme-lightsecondary));
+      border-radius: vars.$border-radius-root;
+    }
+  }
+}

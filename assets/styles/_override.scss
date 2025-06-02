@@ -1,0 +1,59 @@
+﻿html {
+  .bg-success {
+    color: white !important;
+  }
+}
+.v-row + .v-row {
+  margin-top: 0px;
+}
+.v-divider {
+  opacity: 1 !important;
+  border-color: rgba(var(--v-theme-borderLight), 0.36);
+}
+.v-table > .v-table__wrapper > table > thead > tr > th {
+  color: inherit;
+}
+.border-blue-right {
+  border-right: 1px solid rgba(var(--v-theme-borderLight), 0.36);
+}
+
+.v-list-item--density-default.v-list-item--three-line .v-list-item__prepend,
+.v-list-item--density-default.v-list-item--three-line .v-list-item__append {
+  padding-top: 0;
+}
+
+.no-spacer {
+  .v-list-item__spacer {
+    display: none !important;
+  }
+}
+
+@-webkit-keyframes progress-circular-rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes progress-circular-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.dx-datagrid .dx-data-row > td {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.dx-data-row > td {
+  height: 30px;
+}
+
+.dx-datagrid-rowsview .dx-master-detail-row > .dx-master-detail-cell {
+  padding: 0 !important;
+}
