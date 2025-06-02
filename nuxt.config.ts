@@ -5,7 +5,7 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/fonts',
     '@nuxt/test-utils',
-    '@nuxtjs/i18n',
+    // '@nuxtjs/i18n', // search in project for "without i18n" to see all references
     '@pinia/nuxt',
     'pinia-plugin-persistedstate/nuxt',
     'vuetify-nuxt-module',

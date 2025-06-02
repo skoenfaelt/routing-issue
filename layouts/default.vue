@@ -1,7 +1,5 @@
 ﻿<script setup lang="ts">
 import HelpBtn from '~/components/HelpBtn.vue'
-
-const localePath = useLocalePath()
 </script>
 
 <template>
@@ -16,26 +14,20 @@ const localePath = useLocalePath()
     </v-app-bar>
 
     <v-main class="h-full">
-      <Introduction />
       <v-container>
         <v-row>
           <v-col cols="2">
             <v-sheet rounded="lg">
               <v-list rounded="lg">
+                <!--       without i18n > remove localePath         -->
                 <v-list-item
                   title="home"
-                  :to="localePath('/home')"
+                  :to="'/home'"
                   link
                 />
                 <v-list-item
                   title="id 1"
-                  :to="localePath('/home/1')"
-                  link
-                />
-                <v-list-item
-                  v-for="n in 5"
-                  :key="n"
-                  :title="`List Item ${n}`"
+                  :to="'/home/1'"
                   link
                 />
 
